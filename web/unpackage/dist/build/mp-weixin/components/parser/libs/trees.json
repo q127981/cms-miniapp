@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "trees": "/components/parser/libs/trees"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "enablePullDownRefresh": false,
+  "disableScroll": true,
+  "navigationBarTitleText": "我的收藏",
+  "usingComponents": {
+    "scroller": "/components/scroller/scroller",
+    "page-loading": "/components/loading/pageLoading",
+    "article-list": "/components/article/list",
+    "iconfont": "/components/iconfont/iconfont"
+  }
+}

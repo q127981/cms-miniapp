@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "全部评论",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "loading": "/components/loading/loading",
+    "page-loading": "/components/loading/pageLoading",
+    "iconfont": "/components/iconfont/iconfont"
+  }
+}

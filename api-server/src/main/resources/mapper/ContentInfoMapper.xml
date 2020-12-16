@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mrguan.tcyhwapp.mapper.ContentInfoMapper">
+
+    <sql id="getIndexSql">
+        SELECT
+        id, title,photo_url,`read_count` as `read`,create_time,source,comment_count
+        from content_info
+        where enable=1
+        <if test="null !=category_id and ''!=category_id">
+            and category_id=#{category_id}
+        </if>
+        <if test="null !=q and ''!=q">
+            and (LOCATE(#{q},title)>0)
+        </if>
+    </sql>
+
+    <select id="getIndex" resultType="com.mrguan.tcyhwapp.entity.vo.IndexVO">
+        <include refid="getIndexSql"/>
+    </select>
+    <select id="getSlider" resultType="com.mrguan.tcyhwapp.entity.vo.SliderVO">
+        <include refid="getIndexSql"/>
+        and slider=1 limit 10
+    </select>
+    <select id="getById" resultType="com.mrguan.tcyhwapp.entity.vo.DetailVO">
+        select c.* from content_info c
+        where c.id=#{id} and c.enable=1
+    </select>
+    <select id="getFavoriteList" resultType="com.mrguan.tcyhwapp.entity.vo.FavoriteVO">
+     SELECT
+        c.id, c.title,c.photo_url,c.`read_count` as `read`,c.create_time,c.source,c.comment_count,u.create_time favorite_time
+        from content_info c right join user_collect_info u on  c.id=u.c_id and u.type=1
+        where c.enable=1 and u.user_id=#{userId} order by u.create_time desc
+    </select>
+</mapper>

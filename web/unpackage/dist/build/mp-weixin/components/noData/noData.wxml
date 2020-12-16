@@ -1,0 +1,1 @@
+<view class="no-data"><view class="no-data-icon"><image lazy-load="{{true}}" src="{{src}}"></image></view><view class="no-data-text">{{''+text+''}}</view></view>

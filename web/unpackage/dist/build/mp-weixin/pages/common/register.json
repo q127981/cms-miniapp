@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "注册",
+  "usingComponents": {
+    "iconfont": "/components/iconfont/iconfont"
+  }
+}

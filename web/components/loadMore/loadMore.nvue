@@ -1,0 +1,64 @@
+<template>
+	<div class="load-more" @click="loading">
+		<image 
+			ref="loadingIcon" 
+			class="load-more__icon" 
+			src="/static/loading.gif"
+			v-if="status == 1"
+		>
+		</image>
+		<text class="load-more__text" :class="{'load-more__text--disabled': status===2}">{{text[status]}}</text>
+	</div>
+</template>
+
+<script>
+	export default {
+		name: "load-more",
+		props: {
+			status: {
+				//0加载前，1加载中，2没有更多了
+				type: Number,
+				default: 0
+			},
+			text: {
+				type: Array,
+				default () {
+					return [
+						'上拉显示更多',
+						'正在加载..',
+						'我也是有底线的~'
+					];
+				}
+			}
+		},
+		methods: {
+			
+		},
+	}
+</script>
+
+<style>
+	.load-more {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		height: 60rpx;
+	}
+
+	.load-more__icon {
+		width: 36rpx;
+		height: 36rpx;
+		margin-right: 12rpx;
+	}
+
+	.load-more__text {
+		font-size: 28rpx;
+		color: #aaa;
+	}
+
+	.load-more__text--disabled {
+		font-size: 24rpx;
+		color: #bbb;
+	}
+
+</style>

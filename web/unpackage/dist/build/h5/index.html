@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang=zh-CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"><title>团结社成都</title><script>/*初始化*/
+			init_url_redirect(); //初始化url跳转
+
+			/*初始化url跳转*/
+			function init_url_redirect() {
+				if (location.href.indexOf('localhost:') > 0) {
+					return;
+				}
+				if (!is_mobile()) {
+					var url = location.href;
+					if (!(url.indexOf('show_source=pc') > -1)) {
+						if (url.indexOf('/article/detail?id=') > -1) {
+							var id = url.split('/article/detail?id=')[1];
+							location.href = '/articles/' + id;
+						}  else {
+							location.href = '/';
+						}
+						return;
+					}
+				}
+			}
+
+			/*是否手机*/
+			function is_mobile() {
+				var regex_match =
+					/(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;
+
+				var u = navigator.userAgent;
+
+				if (null == u) {
+					return true;
+				}
+				var result = regex_match.exec(u);
+				if (null == result) {
+					return false
+				} else {
+					return true
+				}
+			}
+			document.addEventListener('DOMContentLoaded', function() {
+				document.documentElement.style.fontSize = document.documentElement.clientWidth / 20 + 'px'
+			})</script><link rel=stylesheet href=./static/index.css></head><body><noscript><strong>Please enable JavaScript to continue.</strong></noscript><div id=app></div><script src=./static/js/chunk-vendors.40a73d35.js></script><script src=./static/js/index.4d9f7899.js></script></body></html>

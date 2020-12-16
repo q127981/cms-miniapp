@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "用户设置",
+  "usingComponents": {
+    "iconfont": "/components/iconfont/iconfont"
+  }
+}

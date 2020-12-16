@@ -1,0 +1,257 @@
+/* scroller
+ * version 1.1.8
+ * 2019-11-01 wenju
+ * http://www.mescroll.com
+ */
+
+page {
+	height: 100%;
+	box-sizing: border-box; /* 避免设置padding出现双滚动条的问题 */
+	-webkit-overflow-scrolling: touch; /*使iOS列表滑动流畅*/
+}
+
+.scroller-warp{
+	height: 100%;
+}
+
+.scroller {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 200rpx;
+	overflow-y: auto;
+	box-sizing: border-box; /* 避免设置padding出现双滚动条的问题 */
+}
+
+/* 定位的方式固定高度 */
+.scroller-fixed{
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: auto; /* 使right生效 */
+	height: auto; /* 使bottom生效 */
+}
+
+/* 下拉刷新区域 */
+.scroller-downwarp {
+	position: absolute;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+/* 下拉刷新--内容区,定位于区域底部 */
+.scroller-downwarp .downwarp-content {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	min-height: 60rpx;
+	padding: 20rpx 0;
+	text-align: center;
+}
+
+/* 上拉加载区域 */
+.scroller-upwarp {
+	min-height: 60rpx;
+	padding: 30rpx 0;
+	text-align: center;
+	clear: both;
+}
+
+/* 下拉刷新,上拉加载--提示文本 */
+.scroller-downwarp .downwarp-tip,
+.scroller-upwarp .upwarp-tip,
+.scroller-upwarp .upwarp-nodata {
+	display: inline-block;
+	font-size: 28rpx;
+	color: gray;
+	vertical-align: middle;
+}
+
+.scroller-downwarp .downwarp-tip,
+.scroller-upwarp .upwarp-tip {
+	margin-left: 16rpx;
+}
+
+/* 下拉刷新,上拉加载--旋转进度条 */
+.scroller-downwarp .downwarp-progress,
+.scroller-upwarp .upwarp-progress {
+	display: inline-block;
+	width: 32rpx;
+	height: 32rpx;
+	border-radius: 50%;
+	border: 2rpx solid gray;
+	border-bottom-color: transparent;
+	vertical-align: middle;
+}
+
+/* 旋转动画 */
+.scroller-rotate {
+	-webkit-animation: scrollerRotate 0.6s linear infinite;
+	animation: scrollerRotate 0.6s linear infinite;
+}
+
+@-webkit-keyframes scrollerRotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes scrollerRotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* 无任何数据的空布局 */
+.scroller-empty {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 40rpx;
+	text-align: center;
+}
+
+.scroller-empty.empty-fixed {
+	z-index: 99;
+	position: fixed; /*transform会使fixed失效,最终会降级为absolute */
+	top: 20%;
+	left: 0;
+}
+
+.scroller-empty .empty-icon {
+	margin-top: 40%;
+	width: 100rpx;
+	height: 100rpx !important;
+}
+
+.scroller-empty .empty-tip {
+	color: #bfbfbf;
+	font-size: 30rpx;
+}
+
+.scroller-empty .empty-btn {
+	display: inline-block;
+	margin-top:40rpx;
+	min-width: 200rpx;
+	padding: 9rpx 18rpx;
+	font-size: 28rpx;
+	border: 1rpx solid #ffae03;
+	border-radius: 60rpx;
+	color: #ffae03;
+}
+
+.scroller-empty .empty-btn:active {
+	opacity: .75;
+}
+
+/* 回到顶部的按钮 */
+.scroller-totop {
+	z-index: 9990;
+	position: fixed !important; /* 避免编译到H5,在多scroller中定位失效 */
+	right: 20rpx;
+	bottom: 120rpx;
+	width: 72rpx;
+	height: 72rpx;
+	border-radius: 50%;
+	opacity: 0;
+}
+
+/* 显示动画--淡入 */
+.scroller-lazy-in,
+.scroller-fade-in {
+	-webkit-animation: scrollerFadeIn .3s linear forwards;
+	animation: scrollerFadeIn .3s linear forwards;
+}
+
+@-webkit-keyframes scrollerFadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes scrollerFadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* 隐藏动画--淡出 */
+.scroller-fade-out {
+	pointer-events: none;
+	-webkit-animation: scrollerFadeOut .5s linear forwards;
+	animation: scrollerFadeOut .5s linear forwards;
+}
+
+@-webkit-keyframes scrollerFadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes scrollerFadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.loading {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 90rpx;
+}
+.load-icon {
+	display: block;
+	width: 45rpx;
+	height: 45rpx;
+	margin-right: 12rpx;
+	-webkit-animation: load 1s steps(12) infinite;
+	animation: load 1s steps(12) infinite;
+}
+.load-text {
+	font-size: 28rpx;
+	color: #848c98;
+}
+
+@-webkit-keyframes load {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(1turn);
+		transform: rotate(1turn);
+	}
+}

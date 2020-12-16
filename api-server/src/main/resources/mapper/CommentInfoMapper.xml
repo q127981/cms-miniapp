@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mrguan.tcyhwapp.mapper.CommentInfoMapper">
+    <select id="getList" resultType="com.mrguan.tcyhwapp.entity.vo.CommentVO">
+        SELECT
+        c.*,u.nickname,
+        u.avatar_url
+        <if test="null !=userId and userId!=''">
+            , IF (uc.id IS NULL, 0, 1) is_like
+        </if>
+        FROM
+        comment_info c
+        LEFT JOIN user_info u ON c.user_id = u.id
+        <if test="null !=userId and userId!=''">
+            LEFT JOIN user_collect_info uc ON c.id = uc.c_id AND type = 4 and uc.user_id=#{userId}
+        </if>
+        where pid is null and c.c_id=#{cid}
+        order by create_time asc
+    </select>
+    <select id="getById" resultType="com.mrguan.tcyhwapp.entity.vo.CommentVO">
+        SELECT
+        c.*,u.nickname,
+        u.avatar_url
+        <if test="null !=userId and userId!=''">
+            , IF (uc.id IS NULL, 0, 1) is_like
+        </if>
+        FROM
+        comment_info c
+        LEFT JOIN user_info u ON c.user_id = u.id
+        <if test="null !=userId and userId!=''">
+            LEFT JOIN user_collect_info uc ON c.id = uc.c_id AND type = 4  and uc.user_id=#{userId}
+        </if>
+         where pid is null and c.id=#{id}
+        order by create_time asc
+    </select>
+    <select id="getDetailList" resultType="com.mrguan.tcyhwapp.entity.vo.CommentVO">
+     SELECT
+        c.*,u.nickname,
+        u.avatar_url,
+        u1.nickname parent_nickname
+        <if test="null !=userId and userId!=''">
+            , IF (uc.id IS NULL, 0, 1) is_like
+        </if>
+    FROM
+        comment_info c
+    LEFT JOIN user_info u ON c.user_id = u.id
+    LEFT JOIN comment_info c1 ON c.pid = c1.id
+    LEFT JOIN user_info u1 ON c1.user_id = u1.id
+    <if test="null !=userId and userId!=''">
+        LEFT JOIN user_collect_info uc ON c.id = uc.c_id AND type = 4  and uc.user_id=#{userId}
+    </if>
+    where c.pid=#{id} order by create_time asc
+    </select>
+</mapper>

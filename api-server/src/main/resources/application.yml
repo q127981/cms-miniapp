@@ -1,0 +1,103 @@
+server:
+  port: 9533
+wx:
+  miniapp:
+    configs:
+      - appid: APPID
+        secret: SEECRET
+        token: #微信小程序消息服务器配置的token
+        aesKey: #微信小程序消息服务器配置的EncodingAESKey
+        msgDataFormat: JSON
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: false
+      indent_output: true
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/miniapp?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false
+    username: miniapp
+    password: 数据库密码
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      # 连接池的配置信息
+      # 初始化大小，最小，最大
+      initial-size: 1
+      min-idle: 1
+      maxActive: 20
+      # 配置获取连接等待超时的时间
+      maxWait: 60000
+      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: true
+      testOnReturn: true
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      filters: stat,wall,slf4j
+      # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000;config.decrypt=false;
+      # 合并多个DruidDataSource的监控数据
+      #useGlobalDataSourceStat: true
+      filter:
+        config:
+          enabled: true
+  redis:
+    host: 127.0.0.1
+    #    host: 47.115.148.95
+    database: 1
+    password: xPwKYBakY4hBShaC
+    port: 6379
+    jedis:
+      pool:
+        max-active: 100
+        max-idle: 16
+        max-wait: -1
+        min-idle: 0
+    timeout: 5000
+
+#mybatis
+mybatis:
+  #指定目录类型别名扫描,多个包用;号分割
+  #指定mapper.xml的位置
+  mapper-locations: mapper/*Mapper.xml
+  typeAliasesPackage: com.mrguan.tcyhwapp.model
+  configuration:
+    #开启驼峰命名法转换字段支持,用于对象关系绑定
+    map-underscore-to-camel-case: false
+
+
+##通用mapper
+mapper:
+  mappers:
+    - com.mrguan.tcyhwapp.utils.MyBaseMapper
+  not-empty: false
+  identity: MYSQL
+
+
+#开启debug信息
+logging:
+  enable-api-log: true
+  level:
+    root: warn
+    org:
+      springframework: INFO
+    java:
+      sql:
+        Connection: INFO
+        Statement: INFO
+    com:
+      mrguan:
+        tcyhwapp: INFO
+    cn:
+      binarywang:
+        wx:
+          miniapp: debug
+

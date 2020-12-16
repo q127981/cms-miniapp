@@ -1,0 +1,13 @@
+{
+  "titleNView": false,
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "disableScroll": true,
+  "navigationBarTitleText": "团节社成都",
+  "usingComponents": {
+    "iconfont": "/components/iconfont/iconfont",
+    "scroller": "/components/scroller/scroller",
+    "article-list": "/components/article/list",
+    "page-loading": "/components/loading/pageLoading"
+  }
+}

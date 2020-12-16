@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "详情",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "parser": "/components/parser/parser",
+    "loading": "/components/loading/loading",
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "page-loading": "/components/loading/pageLoading",
+    "iconfont": "/components/iconfont/iconfont"
+  }
+}

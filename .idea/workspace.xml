@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="280d4939-93a5-4318-8280-b1ce0d979bf3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/common/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/common/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/common/main.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/common/main.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/common/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/common/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/article/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/article/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/iconfont/iconfont.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/iconfont/iconfont.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/image/cropper.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/image/cropper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/imageCropper/imageCropper.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/imageCropper/imageCropper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/loading/loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/loading/loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/loading/pageLoading.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/loading/pageLoading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/loading/pageLoading.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/loading/pageLoading.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/noData/noData.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/noData/noData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/parser/libs/trees.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/parser/libs/trees.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/parser/parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/parser/parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/scroller/scroller.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/scroller/scroller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/search/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/uni-popup/uni-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/components/uni-popup/uni-popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/comment.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/comment.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/commentDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/commentDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/detail.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/detail.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/search.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/article/search.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/about.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/about.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/forget.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/forget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/forget.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/forget.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/login.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/login.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/protocol.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/protocol.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/protocol.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/protocol.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/register.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/common/register.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/favorite.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/favorite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/favorites.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/favorites.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/feedback.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/feedback.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/password.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/password.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/password.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/password.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/profile.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/profile.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/setting.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/setting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/setting.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/user/setting.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/wechat/miniAppLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/wechat/miniAppLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/wechat/miniAppLogin.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/pages/wechat/miniAppLogin.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/default_user_photo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/default_user_photo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/default_user_photo.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/default_user_photo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/default_user_photo_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/default_user_photo_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_favorite_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_favorite_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_like_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_like_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_like_01_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_like_01_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_like_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_like_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_like_02_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_like_02_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_no_data.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_no_data.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_no_data_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_no_data_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_no_data_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/icon_no_data_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/logo-o.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/logo-o.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/nav/icon_favorite.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/nav/icon_favorite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/nav/icon_favorite_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/nav/icon_favorite_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/nav/icon_home.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/nav/icon_home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/nav/icon_home_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/nav/icon_home_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/nav/icon_user.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/nav/icon_user.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/nav/icon_user_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin/static/images/nav/icon_user_hover.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/web/unpackage/dist/dev/mp-weixin" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Source/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Source\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ljMquctGpsmxtdDpoN72IBzyWu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="280d4939-93a5-4318-8280-b1ce0d979bf3" name="Default Changelist" comment="" />
+      <created>1608106240325</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608106240325</updated>
+      <workItem from="1608106241665" duration="938000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
